@@ -1,5 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Component1 from './components/Component1.js';
+import ReactDom from 'react-dom';
+import SearchBar from './components/search_bar';
 
-ReactDOM.render(<Component1 />, document.getElementById('root'));
+const API_KEY = "AIzaSyBB29wOGWbCZ4ta4wI9T4W8oepaA2Y5GSg";
+
+//Create new component that will produce html
+
+const App = () => {
+	return (
+		<div>
+			<SearchBar />
+		</div>
+	);
+};
+
+//function to render this component generated HTML on the DOM
+
+ReactDom.render(<App />, document.querySelector("#root"));
