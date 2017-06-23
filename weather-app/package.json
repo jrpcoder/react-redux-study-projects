@@ -1,7 +1,7 @@
 {
-  "name": "chingu-speedrun-app",
+  "name": "weather-app",
   "version": "1.0.0",
-  "description": "web app to track and organize everything related with the chingu fcc speedrun challenge",
+  "description": "web app for weather forecast",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -11,12 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/jrpcoder/chingu-speedrun-app.git"
   },
-  "author": "jmaunders jrpcoder rtyrolia",
+  "author": "jrpcoder",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jrpcoder/chingu-speedrun-app/issues"
-  },
-  "homepage": "https://github.com/jrpcoder/chingu-speedrun-app#readme",
+  "homepage": "https://github.com/jrpcoder/react-redux-study-projects/tree/master/weather-app",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
@@ -30,5 +27,13 @@
     "react-test-renderer": "^15.5.4",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "lodash": "^4.17.4",
+    "react-redux": "^5.0.5",
+    "react-sparklines": "^1.6.0",
+    "redux": "^3.7.0",
+    "redux-promise": "^0.5.3"
   }
 }
