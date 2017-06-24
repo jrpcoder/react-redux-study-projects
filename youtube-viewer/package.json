@@ -1,7 +1,7 @@
 {
-  "name": "chingu-speedrun-app",
+  "name": "youtube-viewer-app",
   "version": "1.0.0",
-  "description": "web app to track and organize everything related with the chingu fcc speedrun challenge",
+  "description": "web app to see youtube videos",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -9,14 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jrpcoder/chingu-speedrun-app.git"
+    "url": "git+https://github.com/jrpcoder/react-redux-study-projects/tree/master/youtube-viewer.git"
   },
-  "author": "jmaunders jrpcoder rtyrolia",
+  "author": "jrpcoder",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jrpcoder/chingu-speedrun-app/issues"
-  },
-  "homepage": "https://github.com/jrpcoder/chingu-speedrun-app#readme",
+  "homepage": "https://github.com/jrpcoder/react-redux-study-projects/tree/master/youtube-viewer#readme",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
