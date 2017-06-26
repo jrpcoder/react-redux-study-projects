@@ -22,5 +22,8 @@ module.exports = {
                         loader: 'sass-loader'
                     }] 
            }]
-    }
+    },
+    devServer: {
+      historyApiFallback: true
+  }
 }
