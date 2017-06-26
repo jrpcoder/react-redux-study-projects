@@ -1,0 +1,34 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "web app to track and organize everything related with the chingu fcc speedrun challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrpcoder/chingu-speedrun-app.git"
+  },
+  "author": "jrpcoder",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.0.2",
+    "enzyme": "^2.8.2",
+    "mocha": "^3.4.2",
+    "react": "^15.6.0",
+    "react-dom": "^15.6.0",
+    "react-test-renderer": "^15.5.4",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
