@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
-import {Field, reduxForm} from 'redux-form';
-import {Link} from 'react-router-dom';
-import {connect} from 'react-redux';
-import {createPost} from '../actions';
+import React, { Component } from 'react';
+import { Field, reduxForm } from 'redux-form';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { createPost } from '../actions';
 
 class PostsNew extends Component {
 	
-	renderField(field) {
-		const {meta: {touched, error}} = field;
-		const className = `form-group ${touched && error ? 'has-danger' : ''}`
+	renderField (field) {
+		const { meta: { touched, error } } = field;
+		const className = `form-group ${touched && error ? 'has-danger' : ''}`;
 
 		return (
 			<div className={className}>
@@ -27,12 +27,12 @@ class PostsNew extends Component {
 
 	onSubmit(values) {
 		this.props.createPost(values, () => {
-			this.props.history.push("/");
+			this.props.history.push('/');
 		});
 	}
 
 	render() {
-		const {handleSubmit} = this.props;
+		const { handleSubmit } = this.props;
 		return (
 			<form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
 				<Field
@@ -57,7 +57,7 @@ class PostsNew extends Component {
 	}
 }
 
-function validate(values){
+function validate(values) {
 	const errors = {};
 
 	// validate each property of values
@@ -79,5 +79,5 @@ export default reduxForm({
 	validate,
 	form: 'PostsNewForm'
 })(
-	connect(null, {createPost})(PostsNew)
+	connect(null, { createPost })(PostsNew)
 );
